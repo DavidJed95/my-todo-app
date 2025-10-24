@@ -2,7 +2,7 @@ import React from "react";
 
 type ButtonProps = {
   // onClick(): React.ComponentProps<"button">["onClick"]; this is the right way to mimic onClick type
-  onClick: () => Promise<void>;
+  onClick?: () => Promise<void>;
   buttonType?: "primary" | "secondary";
   children: React.ReactNode;
 };
